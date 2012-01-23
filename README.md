@@ -1,7 +1,7 @@
 Gretel-ERB
 ==========
 
-Gretel ERB is a a fork of [Lasse Bunk's 'gretel'](http://github.com/lassebunk/gretel)
+Gretel-ERB is a a fork of [Lasse Bunk's 'gretel'](http://github.com/lassebunk/gretel)
 that gives you much more control of your breadcrumb's layout by using ERB
 templates for rendering.  This fork was authored by [Nicholas Zaillian](http://nicholas.zaillian.com)
 ([Washington Square Interactive](http://washingtonsqaureinteractive.com)) to resolve 
