@@ -4,7 +4,7 @@ Gretel-ERB
 Gretel-ERB is a a fork of [Lasse Bunk's 'gretel'](http://github.com/lassebunk/gretel)
 that gives you much more control of your breadcrumb's layout by using ERB
 templates for rendering.  This fork was authored by [Nicholas Zaillian](http://nicholas.zaillian.com)
-([Washington Square Interactive](http://washingtonsqaureinteractive.com)) to resolve 
+([Washington Square Interactive](http://washingtonsquareinteractive.com)) to resolve 
 issues encountered during the ongoing development of [GoodTix](http://goodtix.org).
 
 Note: this is a significant fork of gretel and usage is, accordingly, different
