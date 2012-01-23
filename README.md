@@ -45,8 +45,8 @@ certainly do).  You can do that either by including a <pre>stylesheet\_link\_tag
 directly to the header or adding <pre>*= require './common/breadcrumb'</pre> (or appropriate relative path)
 to an asset manifest file that you've linked to.
 
-Finally, use Gretel's DSL (nearly unchanged in this fork) to declare your page hierarchies in
-<code>config/initializers/breadcrumbs.rb</code> and template partial path:
+Finally, use Gretel's DSL (nearly unchanged in this fork) to declare your page hierarchies and template partial path in
+<code>config/initializers/breadcrumbs.rb</code>:
 
     Gretel::Crumbs.layout do
 		
