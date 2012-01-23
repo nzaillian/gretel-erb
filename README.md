@@ -86,8 +86,8 @@ In <code>app/views/xx/xx.html.erb</code>:
 
 options for <code><%= breadcrumb %></code>:
 
-   :autoroot  --  Whether it should automatically link to :root if no root parent is given. Default: false  
-   :show\_root\_alone  --  Whether it should show :root if this is the only link. Default: false  
-   :link_last  --  Whether the last crumb should be linked to. Default: false  
+    :autoroot           Whether it should automatically link to :root if no root parent is given. Default: false  
+    :show_root_alone  Whether it should show :root if this is the only link. Default: false  
+    :link_last          Whether the last crumb should be linked to. Default: false  
 
 The [original Gretel gem](http://github.com/lassebunk/gretel) was written by Lasse Bunk and released under the MIT license.  This gem retains that license.
