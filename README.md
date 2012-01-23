@@ -1,15 +1,16 @@
 Gretel-ERB
 ==========
 
-Gretel ERB is a a fork of Lasse Bunk's 'gretel' (http://github.com/lassebunk/gretel)
+Gretel ERB is a a fork of [Lasse Bunk's 'gretel'](http://github.com/lassebunk/gretel)
 that gives you much more control of your breadcrumb's layout by using ERB
-templates for rendering.  This fork was created to resolve issues encountered during 
-the (ongoing) development of [GoodTix](http://goodtix.org).
+templates for rendering.  This fork was authored by [Nicholas Zaillian](http://nicholas.zaillian.com)
+([Washington Square Interactive](http://washingtonsqaureinteractive.com)) to resolve 
+issues encountered during the ongoing development of [GoodTix](http://goodtix.org).
 
 Note: this is a significant fork of gretel and usage is, accrodingly, different
 from that of the original gem.  Most of the 'breadcrumb' method options from the
 original plugin (such as the :pretext and :separator options) are not relevant when
-we're using a template to specify the layout of our breadcrumb.  We'll attempt to keep 
+you're using a template to specify the layout of your breadcrumb.  We'll attempt to keep 
 version numbers in sync with those of the original project.
 
 Installation
