@@ -4,7 +4,7 @@ Gretel::Crumbs.layout do
 
   # Declare the path to your custom breadcrumb partial template (optional):
   # template 'common/gretel_breadcrumb.html.erb'
-
+  
   # Example crumbs:
   
   # crumb :root do

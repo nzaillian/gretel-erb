@@ -1,4 +1,5 @@
 Description:
+<<<<<<< HEAD
 
     3 generators (all in namespace "gretel")
 
@@ -37,3 +38,12 @@ Examples:
         app/assets/stylesheets/common/breadcrumb.css.erb
         app/assets/images/common/breadcrumb/breadcrumb_separator.png
         app/assets/images/common/breadcrumb/breadcrumb_bg.png
+=======
+    Generates initializer for Gretel.
+
+Example:
+    rails generate gretel breadcrumbs
+
+    This will create:
+        config/initializers/breadcrumbs.rb
+>>>>>>> 20cc63908a0e8919e9308b5ecc4fc2e800811946
