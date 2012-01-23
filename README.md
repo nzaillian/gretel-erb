@@ -2,7 +2,7 @@ Gretel-ERB
 ==========
 
 Gretel-ERB is a a fork of [Lasse Bunk's 'gretel'](http://github.com/lassebunk/gretel)
-that gives you much more control of your breadcrumb's layout by using ERB
+that gives you much more control over your breadcrumb's layout by using ERB
 templates for rendering.  This fork was authored by [Nicholas Zaillian](http://nicholas.zaillian.com)
 ([Washington Square Interactive](http://washingtonsquareinteractive.com)) to resolve 
 issues encountered during the ongoing development of [GoodTix](http://goodtix.org).
@@ -82,7 +82,7 @@ Finally, use Gretel's DSL (nearly unchanged in this fork) to declare your page h
 
 In <code>app/views/xx/xx.html.erb</code>:
 
-    <% breadcrumb :issue, @issue %>
+    <%= breadcrumb :issue, @issue %>
 
 options for <code><%= breadcrumb %></code>:
 
