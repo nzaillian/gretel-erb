@@ -45,10 +45,15 @@ certainly do).  You can do that either by including a <pre>stylesheet\_link\_tag
 directly to the header or adding <pre>*= require './common/breadcrumb'</pre> (or appropriate relative path)
 to an asset manifest file that you've linked to.
 
-Finally, use Gretel's DSL (unchanged in this fork) to declare your page hierarchies in
+Finally, use Gretel's DSL (nearly unchanged in this fork) to declare your page hierarchies in
 <code>config/initializers/breadcrumbs.rb</code>:
 
     Gretel::Crumbs.layout do
+		
+      # Declare the path to your custom breadcrumb partial template (optional;
+	  # defaults to the path below...)
+      template 'common/gretel_breadcrumb.html.erb'
+
       crumb :root do
         link "Home", root_path
       end
