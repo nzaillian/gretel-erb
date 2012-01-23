@@ -1,0 +1,35 @@
+<div class='breadcrumb-wrap'>
+  <ul class='breadcrumb'>
+    <% if crumbs and crumbs.count > 1 %>
+        <%  crumbs[0..(crumbs.count-2)].each do |crumb| %>
+            <li class='breadcrumb-item'>
+              <span class='inner'>
+                <a href='<%= crumb.link.url %>' class='item-name'>
+                  <span class='breadcrumb-text'>
+                  <%= crumb.link.text %>
+                  </span>
+                </a>
+              </span>
+            </li>
+        <% end %>
+        <% last_crumb = crumbs[crumbs.count - 1] %>
+        <li class='breadcrumb-item'>
+          <span class='inner'>
+            <% if options and options[:link_last] %>
+            <a href='<%= last_crumb.link.url %>' class='item-name last'>
+              <span class='breadcrumb-text'>
+              <%= last_crumb.link.text %>
+              </span>
+            </a>
+            <% else %>
+            <span class='item-name last'>
+              <span class='breadcrumb-text'>
+              <%= last_crumb.link.text %>
+              </span>
+            </span>
+            <% end %>
+          </span>
+        </li>
+    <% end %>
+  </ul>
+</div>

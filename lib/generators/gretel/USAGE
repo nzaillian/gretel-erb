@@ -1,0 +1,39 @@
+Description:
+
+    3 generators (all in namespace "gretel")
+
+        initializer:
+            generates an initializer for your breadcrumbs (with a file name specified by the
+            first argument to the generator) and drops it into your app's config/initializers directory
+
+        partial:
+            Drops a partial template ('_gretel_breadcrumb.html.erb') into 'app/views/common' of your app,
+            and supporting assets (images and a stylesheet) into appropriate places in your app's assets
+            directory tree.  Takes no arguments.
+
+        new:
+           Invokes the initializer generator, and then the partial generator.  Takes one argument: the name
+           for the initializer file (this gets passed right through to the initializer generator).
+
+Examples:
+    (1) rails generate gretel:new breadcrumbs
+
+    This will create:
+        config/initializers/breadcrumbs.rb
+        app/views/common/_gretel_breadcrumb.html.erb
+        app/assets/stylesheets/common/breadcrumb.css.erb
+        app/assets/images/common/breadcrumb/breadcrumb_separator.png
+        app/assets/images/common/breadcrumb/breadcrumb_bg.png
+
+    (2) rails generate gretel:initializer breadcrumbs
+
+    This will create:
+        config/initializers/breadcrumbs.rb
+
+    (3) rails generate gretel:partial
+
+    This will create:
+        app/views/common/_gretel_breadcrumb.html.erb
+        app/assets/stylesheets/common/breadcrumb.css.erb
+        app/assets/images/common/breadcrumb/breadcrumb_separator.png
+        app/assets/images/common/breadcrumb/breadcrumb_bg.png

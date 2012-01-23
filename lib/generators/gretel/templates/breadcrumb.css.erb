@@ -1,0 +1,52 @@
+.breadcrumb-wrap {
+    width:100%;
+    text-align:left;
+}
+
+.breadcrumb-wrap .breadcrumb {
+    min-width: 300px;
+    background-image:url('<%= asset_path 'common/breadcrumb/breadcrumb_bg.png' %>');
+    background-repeat:repeat-x;
+    height:30px;
+    line-height:30px;
+    border:solid 1px #cacaca;
+    width:100%;
+    overflow:hidden;
+    margin:0px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+
+.breadcrumb-wrap .breadcrumb .breadcrumb-item {
+            float:left;
+            padding-left:10px;
+            list-style-type:none;
+            font-size: 13px;
+}
+
+.breadcrumb-wrap .breadcrumb .breadcrumb-item .inner a {
+    background-image:url('<%= asset_path 'common/breadcrumb/breadcrumb_separator.png' %>');
+    height:30px;
+    display:block;
+    background-repeat:no-repeat;
+    background-position:right;
+    padding-right: 15px;
+    text-decoration: none;
+    color:#454545;
+    line-height:30px;
+}
+
+.breadcrumb-wrap .breadcrumb .breadcrumb-item .inner a.last {
+    background-image:none;
+}
+
+.breadcrumb-wrap .breadcrumb .breadcrumb-item .inner a:hover {
+    color:#1A88E9;
+}
+
+.breadcrumb-wrap .breadcrumb .breadcrumb-item .inner span.last {
+    color: #767676;
+    line-height:30px;
+}
