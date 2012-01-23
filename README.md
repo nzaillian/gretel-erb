@@ -27,7 +27,7 @@ And run:
 Example
 -------
 
-Start by generating the initializer, (default) partial and assets:
+Start by generating the initializer, (default) partial, and assets:
 
     $ rails generate gretel:all breadcrumbs
 
@@ -46,7 +46,7 @@ directly to the header or adding <pre>*= require './common/breadcrumb'</pre> (or
 to an asset manifest file that you've linked to.
 
 Finally, use Gretel's DSL (nearly unchanged in this fork) to declare your page hierarchies in
-<code>config/initializers/breadcrumbs.rb</code>:
+<code>config/initializers/breadcrumbs.rb</code> and template partial path:
 
     Gretel::Crumbs.layout do
 		
