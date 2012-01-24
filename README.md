@@ -90,4 +90,6 @@ options for <code><%= breadcrumb %></code>:
     :show_root_alone  Whether it should show :root if this is the only link. Default: false  
     :link_last          Whether the last crumb should be linked to. Default: false  
 
+The 'breadcrumb' helper method passes an array of 'Crumb' objects (see lib/gretel-erb/crumb.rb) sorted oldest to newest to your partial for rendering.  You may do whatever you please with this array.  The default template created by the generator I've included with this gem (see lib/generators/templates/\_gretel\_breadcrumb.html.erb) renders the breadcrumb as a ul wrapped in a div.
+
 The [original Gretel gem](http://github.com/lassebunk/gretel) was written by Lasse Bunk and released under the MIT license.  This gem retains that license.
