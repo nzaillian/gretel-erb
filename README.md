@@ -29,7 +29,7 @@ Example
 
 Start by generating the initializer, (default) partial, and assets:
 
-    $ rails generate gretel:all breadcrumbs
+    $ rails generate gretel:new breadcrumbs
 
 This creates the following files:
 
