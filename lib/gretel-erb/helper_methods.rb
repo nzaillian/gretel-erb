@@ -10,17 +10,17 @@ module Gretel
 
     def breadcrumb(*args)
         options = args.extract_options!
-        name, object = args[0], args[1]
+        name, params = args[0], args[1..-1]
 
         options[:link_last] ||= false
 
         if name
           @_breadcrumb_name = name
-          @_breadcrumb_object = object
-          crumbs = breadcrumb_for(@_breadcrumb_name, @_breadcrumb_object, options)
+          @_breadcrumb_params = params
+          crumbs = breadcrumb_for(@_breadcrumb_name, *@_breadcrumb_params, options)
         else
           if @_breadcrumb_name
-            crumbs = breadcrumb_for(@_breadcrumb_name, @_breadcrumb_object, options)
+            crumbs = breadcrumb_for(@_breadcrumb_name, *@_breadcrumb_params, options)
           elsif options[:show_root_alone]
             crumbs = breadcrumb_for(:root, options)
           end
@@ -31,14 +31,14 @@ module Gretel
     def breadcrumb_for(*args)
       options = args.extract_options!
 
-      name, object = args[0], args[1]
+      name, params = args[0], args[1..-1]
 
-      crumb = Crumbs.get_crumb(name, object)
+      crumb = Crumbs.get_crumb(name, *params)
       out = [crumb]
 
       while parent = crumb.parent
         last_parent = parent.name
-        crumb = Crumbs.get_crumb(parent.name, parent.object)
+        crumb = Crumbs.get_crumb(parent.name, *parent.params)
         out << crumb
       end
 
