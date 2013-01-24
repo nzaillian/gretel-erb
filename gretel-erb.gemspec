@@ -2,8 +2,8 @@ Gem::Specification.new do |s|
   s.name = "gretel-erb"
   s.version = "1.0.8"
 
-  s.author = "Nicholas Zaillian"
-  s.email = "nicholas@zaillian.com"
+  s.author = "nzaillian"
+  s.email = "nzaillian@gmail.com"
   
   s.description = "EOS This is a significant fork of Lasse Bunk's rails gem 'gretel' (http://github.com/lassebunk/gretel) that retains the convenient page hierarchy specification DSL of the original gem, but does all rendering using a user-specifiable partial template."
   
